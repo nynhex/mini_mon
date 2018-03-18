@@ -24,10 +24,10 @@ rescue
 end
 end
 
-if port_open?("your_ip_address_to_montitor", 143)
- puts "Port 143 is open and listening"
+if port_open?("your_ip_address_to_montitor", port=(143))
+ puts "Port #{port} is open and listening"
 end
 
-if port_open?("your_ip_address_to_montitor", 443)
-  puts "Port 443 is open and listening"
+if port_open?("your_ip_address_to_montitor", port=(443))
+  puts "Port #{port} is open and listening"
 end
